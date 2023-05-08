@@ -10,12 +10,12 @@ const FirstSchema = new mongoose.Schema({
     },
     age: {
         type: Number,
-        required: [true, "Needs a Name"],
+        required: [true, "Needs a Number"],
         minlength: [2, "must be at least 2 charaters"]
     },
     hobby: {
         type: String,
-        required: [true, "Needs a Name"],
+        required: [true, "Needs a hobby"],
         minlength: [2, "must be at least 2 charaters"]
     }
 }, {timestamps: true});
